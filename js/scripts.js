@@ -21,8 +21,32 @@ var bmi = function(number1, number2) {
   return weight / heightconvert;
 };
 
+var temp = function(number1) {
+  return number1 * 1.8 + 32
+}
+
+var gallonsToLiters = function (number1) {
+  return number1 * 3.785411784;
+}
+
+var gallonsToQuarts = function (number1) {
+  return number1 * 4;
+}
+
+var quartsToPint = function (number1) {
+  return number1 * 2;
+}
+
+var pintToCup = function (number1) {
+  return number1 * 1.97157;
+}
+
+var cupToFluidOz = function (number1) {
+  return number1 * 8.11537;
+}
+
 var number1 = parseInt(prompt("Enter a number:"));
 var number2 = parseInt(prompt("Enter a second number:"));
 
-var result = bmi(number1, number2);
+var result = gallonsToLiters(number1, number2);
 alert(result);
